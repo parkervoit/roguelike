@@ -45,6 +45,7 @@ class ActionWithDirection(Action):
     @property
     def target_actor(self) -> Optional[Actor]:
         return self.engine.game_map.get_actor_at_location(*self.dest_xy)
+    
     def perform(self) -> None:
         raise NotImplementedError()
 
