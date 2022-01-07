@@ -31,7 +31,7 @@ def new_tile(
     '''helper function for defining individual tile types'''
     return np.array((walkable, transparent, dark, light), dtype = tile_dt)
 # SHROUD represents fog of war
-shroud = np.array((ord(" "), (255,255,255), (0, 0, 0)), dtype = graphic_dt)
+SHROUD = np.array((ord(" "), (255,255,255), (0, 0, 0)), dtype = graphic_dt)
 floor = new_tile(
     walkable = True, 
     transparent = True, 
