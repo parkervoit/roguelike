@@ -80,7 +80,7 @@ class Actor(Entity):
             color = color,
             name = name,
             blocks_movement = True,
-            render_order=RenderOrder.ACTOR,
+            render_order= RenderOrder.ACTOR,
         )
 
         self.ai: Optional[BaseAI] = ai_cls(self)
